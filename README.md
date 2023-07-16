@@ -15,4 +15,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## 👀 What is Smol Ame doing?
 
-https://media.tenor.com/CrdQW-VBhggAAAAd/smol-ame-dance.gif
+![ame-chan](https://media.tenor.com/QdeLwhP42VAAAAAd/that-yoinky-sploinky-smol-ame.gif)
