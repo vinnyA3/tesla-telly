@@ -6,12 +6,12 @@
         {
           "name": "Crunchyroll",
           "link": "https://www.crunchyroll.com",
-          "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000042000/eb9857183290f943fa4a77f7e9ac9711e3251e740dd90dd0ddef97b5cf384ed4"
+          "image": "/images/crunchyroll.webp"
         },
         {
           "name": "HI-DIVE",
           "link": "https://www.hidive.com",
-          "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000042000/eb9857183290f943fa4a77f7e9ac9711e3251e740dd90dd0ddef97b5cf384ed4"
+          "image": "/images/hidive.webp"
         }
       ]
     },
@@ -21,7 +21,7 @@
         {
           "name": "Plex",
           "link": "https://www.plex.tv/",
-          "image": "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000042000/eb9857183290f943fa4a77f7e9ac9711e3251e740dd90dd0ddef97b5cf384ed4"
+          "image": "/images/plex.gif"
         }
       ]
     }

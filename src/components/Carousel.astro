@@ -10,19 +10,20 @@ const { title, items } = Astro.props;
 const cardItemMarginStyle = "margin-right: 1em";
 ---
 
-<div class="carousel">
-  <h2 class="carousel__title">{title}</h2>
-
-  <ul role="list" class="link-card-grid">
-    {items?.map((item, idx) => (
-      <Card
-        href={item.link}
-        title={item.name}
-        body={item.name}
-        style={idx !== items.length - 1 ? cardItemMarginStyle : undefined}
-      />
-     ))}
-  </ul>
+<div>
+  <h2 class="title">{title}</h2>
+  <div class="carousel">
+    <ul role="list" class="link-card-grid">
+      {items?.map((item, idx) => (
+        <Card
+          href={item.link}
+          title={item.name}
+          image={item.image}
+          style={idx !== items.length - 1 ? cardItemMarginStyle : undefined}
+        />
+       ))}
+    </ul>
+  </div>
 </div>
 
 <style>
@@ -30,7 +31,7 @@ const cardItemMarginStyle = "margin-right: 1em";
     overflow-y: scroll;
   }
 
-  .carousel__title {
+  .title {
     font-weight: bold;
     margin-bottom: .8em;
   }
