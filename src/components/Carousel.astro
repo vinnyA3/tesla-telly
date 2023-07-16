@@ -7,17 +7,19 @@ interface Props {
 }
 
 const { title, items } = Astro.props;
+const cardItemMarginStyle = "margin-right: 1em";
 ---
 
 <div class="carousel">
-  <h2>{title}</h2>
+  <h2 class="carousel__title">{title}</h2>
 
   <ul role="list" class="link-card-grid">
-    {items?.map((item) => (
+    {items?.map((item, idx) => (
       <Card
         href={item.link}
         title={item.name}
-        body="Learn how Astro works and explore the official API docs."
+        body={item.name}
+        style={idx !== items.length - 1 ? cardItemMarginStyle : undefined}
       />
      ))}
   </ul>
@@ -26,6 +28,11 @@ const { title, items } = Astro.props;
 <style>
   .carousel {
     overflow-y: scroll;
+  }
+
+  .carousel__title {
+    font-weight: bold;
+    margin-bottom: .8em;
   }
 
 	.link-card-grid {
