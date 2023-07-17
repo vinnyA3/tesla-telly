@@ -1,9 +1,9 @@
 ---
-import Card from './Card.astro';
+import Card, { Props as CardProps } from './Card.astro';
 
 interface Props {
-	title: string;
-  items?: { name: string, link: string, image: string }[]
+  title: string;
+  items?: CardProps[]
 }
 
 const { title, items } = Astro.props;
@@ -16,8 +16,7 @@ const cardItemMarginStyle = "margin-right: 1em";
     <ul role="list" class="link-card-grid">
       {items?.map((item, idx) => (
         <Card
-          href={item.link}
-          title={item.name}
+          link={item.link}
           image={item.image}
           style={idx !== items.length - 1 ? cardItemMarginStyle : undefined}
         />
@@ -36,7 +35,7 @@ const cardItemMarginStyle = "margin-right: 1em";
     margin-bottom: .8em;
   }
 
-	.link-card-grid {
+  .link-card-grid {
     display: inline-flex;
-	}
+  }
 </style>

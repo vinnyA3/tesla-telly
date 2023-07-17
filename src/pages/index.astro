@@ -6,14 +6,12 @@ import Carousel from '../components/Carousel.astro';
 ---
 
 <Layout title="Raphchan Life">
-	<main>
+  <main>
     <nav class="main-nav">
       <h1>Welcome to <span class="text-gradient">TeleHub.tv</span></h1>
-      <div>
-        <button id="open-fullscreen">
-          <span class="text-gradient">Open in Fullscreen</span>
-        </button>
-      </div>
+      <button id="open-fullscreen">
+        <span class="text-gradient">Open in Fullscreen</span>
+      </button>
     </nav>
 
     <div class="carousels">
@@ -23,21 +21,22 @@ import Carousel from '../components/Carousel.astro';
         </section>
       )}
     </div>
-	</main>
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 80vw;
-	}
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 80vw;
+    background-color: #F6F6F6;
+  }
 
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
 
   .carousels {
     margin-top: 3em;
@@ -47,13 +46,13 @@ import Carousel from '../components/Carousel.astro';
     margin-bottom: 3em;
   }
 
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
 
   .main-nav {
     display: flex;
