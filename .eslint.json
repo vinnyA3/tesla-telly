@@ -1,0 +1,16 @@
+{
+  "root": true,
+  "extends": ["plugin:astro/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "overrides": [
+    {
+      "files": ["src/**/*.tsx", "src/**/*.astro"],
+      "parser": "astro-eslint-parser",
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [".astro"]
+      }
+    }
+  ]
+}
