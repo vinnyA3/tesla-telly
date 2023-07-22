@@ -1,6 +1,16 @@
 {
   "data": [
     {
+      "category": "Personal Media",
+      "items": [
+        {
+          "name": "Plex",
+          "link": "https://www.plex.tv/",
+          "image": "/images/plex.gif"
+        }
+      ]
+    },
+    {
       "category": "Anime",
       "items": [
         {
@@ -12,16 +22,6 @@
           "name": "HI-DIVE",
           "link": "https://www.hidive.com",
           "image": "/images/hidive.webp"
-        }
-      ]
-    },
-    {
-      "category": "Personal Media",
-      "items": [
-        {
-          "name": "Plex",
-          "link": "https://www.plex.tv/",
-          "image": "/images/plex.gif"
         }
       ]
     }

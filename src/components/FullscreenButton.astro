@@ -1,0 +1,50 @@
+---
+type Props = {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<button id="open-fullscreen">
+  <span class="text-gradient">{text}</span>
+</button>
+
+<style>
+  #open-fullscreen {
+    display: none;
+  }
+
+  .text-gradient {
+    background-image: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400%;
+    background-position: 0%;
+  }
+</style>
+
+<script>
+  import { isFullscreen$ } from '../state';
+
+  const teslaTelly = 'https://raphchan-life.netlify.app';
+  const ytReferrerPrefix = 'https://www.youtube.com/';
+  const reTeslaUserAgent =
+/Tesla\/(?:develop-)*(?:feature-)*(?:.*fsd.*)*(?:factory-)*(?:terminal-)*([0-9]{4}.[0-9]{1,3}.?[0-9]{0,3}.?[0-9]{0,3}.?[0-9]{0,3})*-(.*)/g;
+
+  if (navigator.userAgent.match(reTeslaUserAgent)) {
+    const wasReferredFromYT = document.referrer.startsWith(ytReferrerPrefix);
+    const fullScreenButton = document.getElementById('open-fullscreen');
+
+    if (fullScreenButton) {
+      fullScreenButton.style.display = 'block';
+      fullScreenButton.addEventListener('click', () => {
+        if (!wasReferredFromYT) {
+          location.href = `${ytReferrerPrefix}redirect?q=${teslaTelly}`;
+        } else {
+          isFullscreen$.set(!isFullscreen$.get());
+        }
+      });
+    }
+  }
+</script>
