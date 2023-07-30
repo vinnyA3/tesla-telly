@@ -24,6 +24,21 @@
           "image": "/images/hidive.webp"
         }
       ]
+    },
+    {
+      "category": "General Streaming",
+      "items": [
+        {
+          "name": "Netflix",
+          "link": "https://www.netflix.com",
+          "image": "/images/netflix.webp"
+        },
+        {
+          "name": "Prime Video",
+          "link": "https://www.amazon.com/Amazon-Video/b?ie=UTF8&node=2858778011",
+          "image": "/images/prime-video.webp"
+        }
+      ]
     }
   ]
 }

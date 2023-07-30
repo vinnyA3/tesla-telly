@@ -1,14 +1,14 @@
 ---
 import type { Item } from '../types';
 
-export type Props = Pick<Item, 'image' | 'link'> & { style?: string }
+export type Props = Pick<Item, 'image' | 'link'> & { style?: string };
 
 const { link, image, style } = Astro.props;
 ---
 
 <li class="link-card" style={style}>
   <a href={link}>
-    <img src={image} alt="" class="image">
+    <img src={image} alt="" class="image" />
   </a>
 </li>
 
@@ -33,6 +33,5 @@ const { link, image, style } = Astro.props;
     width: 100%;
     text-decoration: none;
     background-color: white;
-    opacity: 0.8;
   }
 </style>
