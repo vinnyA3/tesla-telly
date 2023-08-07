@@ -1,4 +1,4 @@
-# Lewd the Racc
+# Remember to Pet the Racc
 
 ## 🧞 Commands
 
