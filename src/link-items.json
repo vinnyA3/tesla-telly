@@ -22,6 +22,11 @@
           "name": "HI-DIVE",
           "link": "https://www.hidive.com",
           "image": "/images/hidive.webp"
+        },
+        {
+          "name": "Holodex"
+          "link": "https://www.holodex.net"
+          "image": "/images/hololive.png"
         }
       ]
     },
