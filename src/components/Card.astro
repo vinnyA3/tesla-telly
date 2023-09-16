@@ -30,8 +30,13 @@ const { link, image, style } = Astro.props;
   }
 
   .link-card > a {
-    width: 100%;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    background-color: white;
+    background-color: black;
+    padding: 0 1.6em;
   }
 </style>
