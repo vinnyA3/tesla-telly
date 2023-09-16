@@ -39,6 +39,16 @@
           "image": "/images/prime-video.webp"
         }
       ]
+    },
+    {
+      "category": "Learning",
+      "items": [
+        {
+          "name": "Frontend Masters",
+          "link": "https://frontendmasters.com/",
+          "image": "/images/fem.svg"
+        }
+      ]
     }
   ]
 }
